@@ -1,0 +1,9 @@
+numpy == 1.25.0
+opencv-python == 4.7.0.72
+pandas ==  2.0.2
+matplotlib == 3.7.1
+pathlib == 1.0.1
+scikit-learn == 1.2.2
+Pillow == 9.5.0
+scikit-image == 0.22.0
+ultralytics
