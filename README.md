@@ -1,15 +1,13 @@
 # Automatic Wood Pith Detection: Local Orientation Estimation and Robust Accumulation
 
+**Accepted at ICPR 2024** [Arxiv](https://arxiv.org/abs/2404.01952).
 
 [link_urudendro]: https://iie.fing.edu.uy/proyectos/madera/
 
-
-Version 1.0
-Last update: 26/11/2023. 
-
+***
 **Pith detection at the right image (blue dot)**
 ![F02b_input_output.png](assets%2FF02b_input_output.png)
-
+***
 
 ## Installation
 ```bash
