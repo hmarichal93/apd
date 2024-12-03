@@ -3,11 +3,15 @@ import cv2
 from ultralytics import YOLO
 import pandas as pd
 
-from lib.structural_tensor import StructuralTensor, sampling_structural_tensor_matrix
-from lib.optimization import Optimization, LeastSquaresSolution, filter_lo_around_c
-from lib.pclines_parallel_coordinates import pclines_local_orientation_filtering
+from automatic_wood_pith_detector.structural_tensor import StructuralTensor, sampling_structural_tensor_matrix
+from automatic_wood_pith_detector.optimization import Optimization, LeastSquaresSolution, filter_lo_around_c
+from automatic_wood_pith_detector.pclines_parallel_coordinates import pclines_local_orientation_filtering
 
 
+class Method:
+    apd = 0
+    apd_pcl = 1
+    apd_dl = 2
 def local_orientation(img_in, st_sigma, st_window):
 
     gray_image = cv2.cvtColor(img_in, cv2.COLOR_RGB2GRAY).copy()
