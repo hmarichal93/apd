@@ -8,11 +8,11 @@ from pathlib import Path
 import time
 import argparse
 
-from lib.image import resize_image_using_pil_lib, Color
-from lib.automatic_wood_pith_detector import  apd, apd_pcl, apd_dl
+from automatic_wood_pith_detector.image import resize_image_using_pil_lib, Color
+from automatic_wood_pith_detector.automatic_wood_pith_detector import  apd, apd_pcl, apd_dl, Method
 
 
-def main(filename, output_dir, percent_lo=0.7, st_w=3, method=0, new_shape=640, debug=True, lo_w=3, st_sigma=1.2,
+def main(filename, output_dir, percent_lo=0.5, st_w=3, method=0, new_shape=640, debug=True, lo_w=11, st_sigma=1.2,
         weigths_path=None):
 
     to = time.time()
@@ -72,10 +72,6 @@ def main(filename, output_dir, percent_lo=0.7, st_w=3, method=0, new_shape=640, 
     return peak
 
 
-class Method:
-    apd = 0
-    apd_pcl = 1
-    apd_dl = 2
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser(description='Pith detector')

@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 import cv2
 
-from lib.geometry import Line
+from automatic_wood_pith_detector.geometry import Line
 
 
 def compute_intersection_with_block_boundaries( p1, p2, img):

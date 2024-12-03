@@ -16,18 +16,13 @@ conda activate pith
 conda install -n pith pip
 ```
 ```bash
-pip3 install --no-cache-dir -r requirements.txt
+pip install .
 ```
 
 ## Dataset
 
 ```bash
 python fetch_dataset.py
-```
-
-## Download pretrained model
-```bash
-python fetch_pretrained_model.py
 ```
 
 ## Examples of usage
@@ -39,7 +34,12 @@ python main.py --filename ./Input/F02c.png --output_dir Output/ --new_shape 640 
 
 Example of usage with pclines postprocessing
 ```bash
-python main.py --filename ./Input/F02b.png --output_dir Output/ --new_shape 640 --debug 1 --pclines 1
+python main.py --filename ./Input/F02b.png --output_dir Output/ --new_shape 640 --debug 1 --method 1
+```
+
+Example of usage with apc-dl
+```bash
+python main.py --filename ./Input/F02b.png --output_dir Output/ --new_shape 640 --debug 1 --method 2
 ```
 
 ## Citation

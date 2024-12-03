@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-from lib.image import Drawing
+from automatic_wood_pith_detector.image import Drawing
 
 
 
