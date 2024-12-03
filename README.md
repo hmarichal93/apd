@@ -26,7 +26,22 @@ python fetch_dataset.py
 ```
 
 ## Examples of usage
+### Import the module
+```python
+from automatic_wood_pith_detector.automatic_wood_pith_detector import  apd, apd_pcl, apd_dl
+import cv2 
 
+st_sigma = 1.2
+st_w = 3
+lo_w = 11
+percent_lo = 0.5
+
+img_in= cv2.imread('./Input/F02c.png')
+peak = apd(img_in, st_sigma, st_w, lo_w, rf = 7, percent_lo = percent_lo, max_iter = 11, epsilon =10 ** -3)
+
+```
+
+### CLI
 Example of usage:
 ```bash
 python main.py --filename ./Input/F02c.png --output_dir Output/ --new_shape 640 --debug 1
@@ -37,7 +52,7 @@ Example of usage with pclines postprocessing
 python main.py --filename ./Input/F02b.png --output_dir Output/ --new_shape 640 --debug 1 --method 1
 ```
 
-Example of usage with apc-dl
+Example of usage with apd-dl
 ```bash
 python main.py --filename ./Input/F02b.png --output_dir Output/ --new_shape 640 --debug 1 --method 2
 ```
