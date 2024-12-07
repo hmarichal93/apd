@@ -1,6 +1,6 @@
 # Automatic Wood Pith Detection: Local Orientation Estimation and Robust Accumulation
 
-**Accepted at ICPR 2024** [Arxiv](https://arxiv.org/abs/2404.01952).
+[ICPR 2024](https://link.springer.com/chapter/10.1007/978-3-031-78447-7_1) [Arxiv](https://arxiv.org/abs/2404.01952).
 
 [link_urudendro]: https://iie.fing.edu.uy/proyectos/madera/
 
