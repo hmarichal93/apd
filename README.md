@@ -61,13 +61,16 @@ python main.py --filename ./Input/F02b.png --output_dir Output/ --new_shape 640 
 If you use this code, please cite the following paper:
 
 ```
-@misc{marichal2024automatic,
-      title={Automatic Wood Pith Detector: Local Orientation Estimation and Robust Accumulation}, 
-      author={Henry Marichal and Diego Passarella and Gregory Randall},
-      year={2024},
-      eprint={2404.01952},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@InProceedings{marichal2024automatic,
+author="Marichal, Henry and Passarella, Diego and Randall, Gregory",
+editor="Antonacopoulos, Apostolos and Chaudhuri, Subhasis and Chellappa, Rama and Liu, Cheng-Lin and Bhattacharya, Saumik and Pal, Umapada",
+title="Automatic Wood Pith Detector: Local Orientation Estimation and Robust Accumulation",
+booktitle="Pattern Recognition",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="1--15",
+isbn="978-3-031-78447-7"
 }
 ```
 
